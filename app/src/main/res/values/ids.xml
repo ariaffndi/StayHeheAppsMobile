@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="buttonContainer" type="id" />
+    <item name="reservationText" type="id" />
+    <item name="backgroundImage" type="id" />
+    <item name="titleText" type="id" />
+    <item name="bookNowButton" type="id" />
+    <item name="titleText2" type="id" />
+</resources>
