@@ -90,6 +90,7 @@
                 android:layout_height="wrap_content"
                 android:padding="15dp"
                 android:orientation="horizontal"
+                android:onClick="goToMaps"
                 >
 
                 <LinearLayout
