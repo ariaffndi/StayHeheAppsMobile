@@ -34,7 +34,6 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp" />
 
-            <!-- Title -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -45,16 +44,45 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="-15dp" />
 
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textColor="@color/primary"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_gravity="start"
+                android:layout_marginTop="30dp" />
+
             <!-- Subtitle -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sign in to your account"
+                android:text="Create an account to continue!"
                 android:textColor="@color/primary"
-                android:textSize="20sp"
+                android:textSize="15sp"
+                android:layout_gravity="start" />
+
+            <!-- Name Field -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textColor="@color/primary"
+                android:textSize="15sp"
                 android:textStyle="bold"
-                android:layout_gravity="center"
-                android:layout_marginTop="50dp" />
+                android:layout_marginTop="30dp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your full name"
+                android:inputType="textPersonName"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"
+                android:padding="12dp" />
 
             <!-- Email Field -->
             <TextView
@@ -72,6 +100,26 @@
                 android:layout_height="wrap_content"
                 android:hint="Enter your email address"
                 android:inputType="textEmailAddress"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"
+                android:padding="12dp" />
+
+            <!-- Phone Number Field -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textColor="@color/primary"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your phone number"
+                android:inputType="textPhonetic"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/custom_edittext"
                 android:padding="12dp" />
@@ -96,60 +144,72 @@
                 android:background="@drawable/custom_edittext"
                 android:padding="12dp" />
 
-            <!-- Forgot Password -->
-            <TextView
-                android:id="@+id/forgotPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Forgot password?"
-                android:textColor="#757575"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="end" />
-
-
-
-            <!-- Sign In Button -->
-            <Button
-                android:id="@+id/signInButton"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:backgroundTint="@color/secondary"
-                android:text="Sign in"
-                android:textSize="17sp"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:layout_marginTop="30dp"
-                android:onClick="signIn"
-                />
-
-            <!-- Other Sign In Options -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="other way to sign in"
-                android:textColor="#757575"
-                android:layout_gravity="center"
-                android:layout_marginTop="150dp" />
-
-            <!-- Social Media Buttons -->
+            <!-- Terms and Agreement -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginTop="16dp">
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical">
 
-                <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:src="@drawable/google_icon"
-                    android:layout_marginEnd="16dp" />
+                <CheckBox
+                    android:id="@+id/termsCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
-                <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:src="@drawable/facebook_icon" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I’ve read and agreed to "
+                        android:textColor="#757575" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="User Agreement"
+                            android:textColor="@color/primary"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" and "
+                            android:textColor="#757575" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Privacy Policy"
+                            android:textColor="@color/primary"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
+
+            <!-- Sign In Button -->
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/secondary"
+                android:text="Register"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:onClick="backToLogin"
+                />
+
 
             <!-- Create Account -->
             <LinearLayout
@@ -157,22 +217,22 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:layout_marginTop="50dp">
+                android:layout_marginTop="24dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Don’t have an account? "
+                    android:text="Already have an account? "
                     android:textColor="#757575" />
 
                 <TextView
-                    android:id="@+id/createAccount"
+                    android:id="@+id/backToLogin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Create Account"
+                    android:text="Login"
                     android:textColor="@color/primary"
                     android:textStyle="bold"
-                    android:onClick="createAccount"/>
+                    android:onClick="backToLogin" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
