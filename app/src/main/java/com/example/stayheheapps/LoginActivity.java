@@ -81,7 +81,7 @@ public class LoginActivity extends AppCompatActivity {
                                            .show();
 
                                    // hide the progress bar
-                                   progressBar.setVisibility(View.GONE);
+                                   progressOverlay.setVisibility(View.GONE);
 
                                    // if sign-in is successful
                                    // intent to home activity
@@ -96,7 +96,7 @@ public class LoginActivity extends AppCompatActivity {
                                            .show();
 
                                    // hide the progress bar
-                                   progressBar.setVisibility(View.GONE);
+                                   progressOverlay.setVisibility(View.GONE);
                                }
                            }
                        });
