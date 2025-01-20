@@ -173,13 +173,13 @@
                     android:text="Already have an account? "
                     android:textColor="#757575" />
 
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Sign In"-->
-<!--                    android:textColor="@color/primary"-->
-<!--                    android:textStyle="bold"-->
-<!--                    android:onClick="backToLogin" />-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign In"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold"
+                    android:onClick="backToLogin" />
             </LinearLayout>
 
             <!-- Progress Bar -->

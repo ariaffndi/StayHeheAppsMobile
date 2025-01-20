@@ -9,10 +9,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.stayheheapps" />
+                  <option name="mobileSdkAppId" value="1:352568991956:android:e863d7d836c040833a5b41" />
+                  <option name="projectId" value="stayhehe-84a81" />
+                  <option name="projectNumber" value="352568991956" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

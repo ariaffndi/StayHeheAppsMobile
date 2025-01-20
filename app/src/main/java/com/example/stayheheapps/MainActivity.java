@@ -65,4 +65,8 @@ public class MainActivity extends AppCompatActivity {
     public void goToDetail(View view) {
         startActivity(new Intent(this, DetailActivity.class));
     }
+
+    public void backToLogin(View view) {
+        startActivity(new Intent(this, LoginActivity.class));
+    }
 }
