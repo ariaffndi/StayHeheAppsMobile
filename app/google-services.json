@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "352568991956",
+    "project_id": "stayhehe-84a81",
+    "storage_bucket": "stayhehe-84a81.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352568991956:android:e863d7d836c040833a5b41",
+        "android_client_info": {
+          "package_name": "com.example.stayheheapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "352568991956-09b7dka25h97mu1h2sg6d17ua397a8fj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFx9GLvgV4FJTgGfj7n_NrcL6ZHtJ-S0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "352568991956-09b7dka25h97mu1h2sg6d17ua397a8fj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

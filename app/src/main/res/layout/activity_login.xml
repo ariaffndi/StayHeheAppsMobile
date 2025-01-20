@@ -220,8 +220,25 @@
                     android:layout_height="wrap_content"
                     android:text="Create Account"
                     android:textColor="@color/primary"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:onClick="registration"/>
+
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
+    <FrameLayout
+        android:id="@+id/progressOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:indeterminate="true"
+            android:layout_gravity="center"
+            style="?android:attr/progressBarStyleLarge" />
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
